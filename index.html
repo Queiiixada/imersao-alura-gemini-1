@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Acho que pode se dizer que é tudo aquilo que fica no "backend"-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Esse href é usado para "puxar" um link daqui mesmo, uma referencia-->
+    <title>Olimpíadas</title>
+</head>
+<body> <!--Corpo do site, tudo que é apresentável, "frotend" (eu achoo)-->
+    <header> <!--Cabeçalho-->
+        <h1>Atletas das Olimpíadas</h1>
+    </header>
+    <main> <!--Corpo, conteúdo-->
+        <section>
+        <input type="text" placeholder="Digite o nome do atleta" id="campo-pesquisa">
+        <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa"> <!--class tbm lika css, mas mais especificadamente. ID linka JS-->
+            <!--<div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Rebeca Andrade</a> A # indica que o link não levará a lugar nenhum
+                </h2>
+                <p class="descricao-meta">Rebeca Andrade é um nome que brilha no cenário esportivo brasileiro, especialmente na ginástica artística. Nascida em Guarulhos, São Paulo, ela se tornou um símbolo de superação e talento.</p>
+                <a href="https://pt.wikipedia.org/wiki/Rebeca_Andrade" target="_blank">Mais informações</a> pelo q eu entendi, a tag A junto do atributo href faz com que seu site use uma referência externa // o atributo target junto do blank faz o link abrir em outra aba
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Rayssa Leal</a>
+                </h2>
+                <p class="descricao-meta">Rayssa Leal, a Fadinha, é uma skatista brasileira que conquistou o mundo com seu talento precoce. Aos poucos anos, ela se tornou a mais jovem medalhista olímpica da história do Brasil.</p>
+                <a href="https://pt.wikipedia.org/wiki/Rayssa_Leal" target="_blank">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Beatriz Souza</a>
+                </h2>
+                <p class="descricao-meta">Beatriz Souza é uma judoca brasileira que se destacou nos Jogos Olímpicos de Paris 2024, conquistando a medalha de ouro. Sua história de superação e dedicação a inspirou milhões de brasileiros.</p>
+                <a href="#" target="_blank">Mais informações</a>
+            </div>-->
+        </section>
+    </main>
+    <footer>
+        <p>
+            2024 - Olímpiadas
+        </p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script> <!--Ao usar o css, usamos href e style.css para linkar. Ja o JavaScript é necessario usar a tag script no FINAL do body
+</body>
+</html>
